@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Homepage</title>
+	<title>Daftar</title>
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
 
@@ -32,9 +32,9 @@
 </head>
 
 <body>
-	<header class="header" id="header">
+	<!-- <header class="header" id="header"> -->
 		<!--header-start-->
-		<div class="container">
+		<!-- <div class="container">
 			<figure class="logo animated fadeInDown delay-07s">
 				<a href="#"><img src="img/logo.png" alt=""></a>
 			</figure>
@@ -43,8 +43,8 @@
 				<li>Tentukan masa depanmu dari sekarang</li>
 			</ul>
 			<a class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
-		</div>
-	</header>
+		</div> -->
+	<!-- </header> -->
 	<!--header-end-->
 
 	<nav class="main-nav-outer" id="test">
@@ -55,6 +55,8 @@
 				<li><a href="#header">Home</a></li>
 				<li><a href="#service">Bobot</a></li>
 				<li><a href="#Portfolio">Histori</a></li>
+				<li><a href="">Masuk</a></li>
+				<li><a href="register.php">Daftar</a></li>
 			</ul>
 			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
 		</div>
