@@ -53,7 +53,7 @@
 			<ul class="main-nav">
 				<li class="small-logo"><a href="#header"><img src="img/smallicon.png" alt=""></a></li>
 				<li><a href="#header">Home</a></li>
-				<li><a href="#service">Bobot</a></li>
+				<li><a href="index.php">Bobot</a></li>
 				<li><a href="#Portfolio">Histori</a></li>
 				<li><a href="">Masuk</a></li>
 				<li><a href="register.php">Daftar</a></li>

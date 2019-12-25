@@ -53,7 +53,7 @@
 			<ul class="main-nav">
 				<li class="small-logo"><a href="#header"><img src="img/smallicon.png" alt=""></a></li>
 				<li><a href="#header">Home</a></li>
-				<li><a href="#service">Bobot</a></li>
+				<li><a href="index.php">Bobot</a></li>
 				<li><a href="#Portfolio">Histori</a></li>
 				<li><a href="">Masuk</a></li>
 				<li><a href="register.php">Daftar</a></li>
@@ -68,8 +68,71 @@
 	<section class="main-section" id="service">
 		<!--main-section-start-->
 		<div class="container">
-			<h2>Bobot</h2>
-			<h6>Silakan masukan bobot dari setiap kriteria</h6>
+			<h2>Pendaftaran Akun</h2>
+			<h6>Silakan isi sesuai data diri Anda</h6>
+			<div class="row">
+				<div class="wow fadeInLeft delay-05s">
+					<!-- <div class="service-list"> -->
+						<!-- <div class="service-list-col1"></div>
+						<div class="service-list-col2"> -->
+							<form>
+								<div class="form-row">
+								    <div class="form-group col-md-6">
+								      <label for="inputEmail4">Email</label>
+								      <input type="email" class="form-control" id="inputEmail4">
+								    </div>
+								    <div class="form-group col-md-6">
+								      <label for="inputPassword4">Password</label>
+								      <input type="password" class="form-control" id="inputPassword4">
+								    </div>
+								</div>
+								<div class="form-group">
+								    <label for="inputAddress">Address</label>
+								    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+								</div>
+								<div class="form-group">
+								    <label for="inputAddress2">Address 2</label>
+								    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+								</div>
+								<div class="form-row">
+								    <div class="form-group col-md-6">
+								      <label for="inputCity">City</label>
+								      <input type="text" class="form-control" id="inputCity">
+								    </div>
+								    <div class="form-group col-md-4">
+								      <label for="inputState">State</label>
+								      <select id="inputState" class="form-control">
+								        <option selected>Choose...</option>
+								        <option>...</option>
+								      </select>
+								    </div>
+								    <div class="form-group col-md-2">
+								      <label for="inputZip">Zip</label>
+								      <input type="text" class="form-control" id="inputZip">
+								    </div>
+								</div>
+								<div class="form-group">
+								    <div class="form-check">
+								      <input class="form-check-input" type="checkbox" id="gridCheck">
+								      <label class="form-check-label" for="gridCheck">
+								        Check me out
+								      </label>
+								    </div>
+								</div>
+								<button type="submit" class="btn btn-primary">Sign in</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				<!-- </div> -->
+			
+		</section>
+
+
+
+
+			<!-- <h2>Pendaftaran Akun</h2>
+			<h6>Silakan isi sesuai data diri Anda</h6>
 			<div class="row">
 				<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
 					<div class="service-list">
@@ -131,7 +194,7 @@
 			</div>
 		</div>
 	</section>
-	<!--main-section-end-->
+	<!--main-section-end--> -->
 
 
 	<section class="main-section alabaster" id="Portfolio">
