@@ -55,6 +55,8 @@
 				<li><a href="#header">Home</a></li>
 				<li><a href="#service">Bobot</a></li>
 				<li><a href="#Portfolio">Histori</a></li>
+				<li><a href="">Masuk</a></li>
+				<li><a href="register.php">Daftar</a></li>
 			</ul>
 			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
 		</div>
