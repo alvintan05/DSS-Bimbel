@@ -1,4 +1,3 @@
-<!doctype html>
 <html>
 
 <head>
@@ -67,66 +66,70 @@
 		<!--main-section-start-->
 		<div class="container">
 			<h2>Bobot</h2>
-			<h6>Silakan masukan bobot dari setiap kriteria</h6>
-			<div class="row">
-				<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
-					<div class="service-list">
-						<div class="service-list-col1"></div>
-						<div class="service-list-col2">
+			<h6>Silakan masukan bobot dari setiap kriteria</h6>			
+			<form method="POST" action="CalculationPage.php">
 
-							<div class="form-group">
-								<label for="inputBiaya">Bobot Biaya</label>								
-								<select class="form-control" id="biaya">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
+				<div class="row">
+					<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+						<div class="service-list">
+							<div class="service-list-col1"></div>
+							<div class="service-list-col2">
+
+								<div class="form-group">
+									<label for="inputBiaya">Bobot Biaya</label>								
+									<select class="form-control" id="biaya" name="biaya">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="inputFasilitas">Bobot Fasilitas</label>								
+									<select class="form-control" id="fasilitas" name="fasilitas">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="inputPertemuan">Bobot Jumlah Pertemuan</label>						
+									<select class="form-control" id="pertemuan" name="pertemuan">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="inputKapasitas">Bobot Kapasitas</label>								
+									<select class="form-control" id="kapasitas" name="kapasitas">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</div>
+
+								<br>
+								
+								<div class="form-group">
+									<button type="submit" class="input-btn" name="submit">Hitung</button>
+								</div>
+
 							</div>
-
-							<div class="form-group">
-								<label for="inputFasilitas">Bobot Fasilitas</label>								
-								<select class="form-control" id="fasilitas">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-
-							<div class="form-group">
-								<label for="inputPertemuan">Bobot Jumlah Pertemuan</label>								
-								<select class="form-control" id="pertemuan">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-
-							<div class="form-group">
-								<label for="inputKapasitas">Bobot Kapasitas</label>								
-								<select class="form-control" id="kapasitas">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-
-							<br>
-							
-							<div class="form-group">
-								<button type="submit" class="input-btn">Hitung</button>
-							</div>
-
 						</div>
-					</div>
-			</div>
+				</div>
+
+			</form>
 		</div>
 	</section>
 	<!--main-section-end-->
