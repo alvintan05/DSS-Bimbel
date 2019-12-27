@@ -54,8 +54,8 @@
 				<li><a href="index.php">Home</a></li>
 				<li><a href="index.php">Bobot</a></li>
 				<li><a href="#Portfolio">Histori</a></li>
-				<li><a href="">Masuk</a></li>
-				<li><a href="">Daftar</a></li>
+				<li><a href="#Portfolio">Masuk</a></li>
+				<li><a href="#Portfolio">Daftar</a></li>
 			</ul>
 			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
 		</div>
