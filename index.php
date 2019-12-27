@@ -83,8 +83,7 @@
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
+										<option value="4">4</option>										
 									</select>
 								</div>
 
@@ -94,8 +93,7 @@
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
+										<option value="4">4</option>										
 									</select>
 								</div>
 
@@ -105,8 +103,7 @@
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
+										<option value="4">4</option>										
 									</select>
 								</div>
 
@@ -116,8 +113,7 @@
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
-										<option value="4">4</option>
-										<option value="5">5</option>
+										<option value="4">4</option>										
 									</select>
 								</div>
 
@@ -144,15 +140,15 @@
 				<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
 				</figure>
 				<div class="col-lg-7 col-sm-8 featured-work">
-					<h2>NGANTUK</h2>
-					<P class="padding-b"> NGANTUK</P>
+					<h2>Lorem</h2>
+					<P class="padding-b"> Lorem</P>
 					<div class="featured-box">
 						<div class="featured-box-col1 wow fadeInRight delay-02s">
 							<i class="fa fa-magic"></i>
 						</div>
 						<div class="featured-box-col2 wow fadeInRight delay-02s">
-							<h3>BODO</h3>
-							<p>GUANGANTUK </p>
+							<h3>Lorem</h3>
+							<p>Lorem </p>
 						</div>
 					</div>
 					<div class="featured-box">
@@ -160,8 +156,8 @@
 							<i class="fa fa-gift"></i>
 						</div>
 						<div class="featured-box-col2 wow fadeInRight delay-04s">
-							<h3>NGANTUK</h3>
-							<p>NGANTUK </p>
+							<h3>Lorem</h3>
+							<p>Lorem </p>
 						</div>
 					</div>
 					<div class="featured-box">
@@ -169,8 +165,8 @@
 							<i class="fa fa-dashboard"></i>
 						</div>
 						<div class="featured-box-col2 wow fadeInRight delay-06s">
-							<h3>NGANTUKBODO</h3>
-							<p>TIDUR </p>
+							<h3>Lorem</h3>
+							<p>Lorem </p>
 						</div>
 					</div>
 					<a class="Learn-More" href="#">Learn More</a>
