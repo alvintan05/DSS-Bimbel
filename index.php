@@ -72,9 +72,11 @@
 			<form method="POST" action="CalculationPage.php">
 
 				<div class="row">
-					<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+					<div class="col-md-2"></div>
+					<div class="col-md-3 wow fadeInLeft delay-05s">
 						<div class="service-list">
-							<div class="service-list-col1"></div>
+							<div class="service-list-col1">								
+							</div>
 							<div class="service-list-col2">
 
 								<div class="form-group">
@@ -125,8 +127,30 @@
 
 							</div>
 						</div>
-				</div>
+					</div>
+					<div class="col-md-5 wow fadeInLeft delay-05s"> 
 
+						<table>
+							<tr align="left">
+								<td>Keterangan Bobot</td>
+							</tr>
+							<tr align="left">
+								<td>1 : Sangat Tidak Penting</td>
+							</tr>							
+							<tr align="left">
+								<td>2 : Tidak Penting</td>
+							</tr>								
+							<tr align="left">
+								<td>3 : Penting</td>
+							</tr>							
+							<tr align="left">
+								<td>4 : Sangat Penting</td>
+							</tr>									
+						</table>											
+
+					</div>
+				</div>
+				<div class="col-md-2"></div>
 			</form>
 		</div>
 	</section>
