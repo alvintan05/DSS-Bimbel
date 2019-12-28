@@ -1,10 +1,11 @@
+<!doctype html>
 <html>
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Homepage</title>
+	<title>Daftar</title>
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
 
@@ -31,21 +32,6 @@
 </head>
 
 <body>
-	<header class="header" id="header">
-		<!--header-start-->
-		<div class="container">
-			<figure class="logo animated fadeInDown delay-07s">
-				<a href="#"><img src="img/logo.png" alt=""></a>
-			</figure>
-			<h1 class="animated fadeInDown delay-07s">Selamat Datang di Sistem Pendukung Keputusan Bimbingan Belajar Kelas 12 SMA</h1>
-			<ul class="we-create animated fadeInUp delay-1s">
-				<li>Tentukan masa depanmu dari sekarang</li>
-			</ul>
-			<a class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
-		</div>
-	</header>
-	<!--header-end-->
-
 	<nav class="main-nav-outer" id="test">
 		<!--main-nav-start-->
 		<div class="container">
@@ -54,7 +40,7 @@
 				<li><a href="index.php">Home</a></li>
 				<li><a href="index.php">Bobot</a></li>
 				<li><a href="#Portfolio">Histori</a></li>
-				<li><a href="login.php">Masuk</a></li>
+				<li><a href="">Masuk</a></li>
 				<li><a href="register.php">Daftar</a></li>
 			</ul>
 			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
@@ -67,70 +53,41 @@
 	<section class="main-section" id="service">
 		<!--main-section-start-->
 		<div class="container">
-			<h2>Bobot</h2>
-			<h6>Silakan masukan bobot dari setiap kriteria</h6>			
-			<form method="POST" action="CalculationPage.php">
-
-				<div class="row">
-					<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
-						<div class="service-list">
-							<div class="service-list-col1"></div>
-							<div class="service-list-col2">
-
-								<div class="form-group">
-									<label for="inputBiaya">Bobot Biaya</label>								
-									<select class="form-control" id="biaya" name="biaya">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
+			<h2>Login</h2>
+			<h6></h6>
+			<div class="row">
+				<div class="wow fadeInLeft delay-05s">
+							<form method="post" action="loginProses.php">
+								<div class="form-row">
+									<div class="form-group col-md-4"></div>
+									<div class="form-group col-md-4">
+									    <label for="inputEmail">Email</label>
+									    <input type="text" class="form-control" name="email" id="inputEmail" placeholder="ex : namaemail@gmail.com">
+									</div>
+									<div class="form-group col-md-4"></div>
 								</div>
-
-								<div class="form-group">
-									<label for="inputFasilitas">Bobot Fasilitas</label>								
-									<select class="form-control" id="fasilitas" name="fasilitas">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
+								<div class="form-group col-md-12"></div>
+								<div class="form-row">
+									<div class="form-group col-md-4"></div>
+									<div class="form-group col-md-4">
+								    	<label for="inputPw">Password</label>
+								    	<input type="Password" class="form-control" name="pw" id="inputPw" placeholder="">
+									</div>	
+									<div class="form-group col-md-4"></div>
 								</div>
-
-								<div class="form-group">
-									<label for="inputPertemuan">Bobot Jumlah Pertemuan</label>						
-									<select class="form-control" id="pertemuan" name="pertemuan">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label for="inputKapasitas">Bobot Kapasitas</label>								
-									<select class="form-control" id="kapasitas" name="kapasitas">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
-								</div>
-
-								<br>
-								
-								<div class="form-group">
-									<button type="submit" class="input-btn" name="submit">Hitung</button>
-								</div>
-
+								<div class="form-group col-md-12"></div>
+								<div class="form-row">
+									<div class="form-group col-md-4"></div>
+									<div class="form-group col-md-4">
+										<button type="submit" class="btn btn-primary">Masuk</button>
+									</div>	
+									<div class="form-group col-md-4"></div>
+								</div>					
+								</form>
 							</div>
 						</div>
-				</div>
-
-			</form>
-		</div>
-	</section>
-	<!--main-section-end-->
+					</div>
+		</section>
 
 
 	<section class="main-section alabaster" id="Portfolio">

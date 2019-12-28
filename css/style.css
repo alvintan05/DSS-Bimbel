@@ -171,6 +171,15 @@ color: #fff;
 	color:#fff !important;
 }
 
+.kotak1{
+	.kotak_login{
+	width: 350px;
+	background: #edf69f;
+	/*meletakkan form ke tengah*/
+	margin: 80px auto;
+	padding: 30px 20px;
+}
+
 /* Navigation
 ---------------------------------*/
 .main-nav-outer{

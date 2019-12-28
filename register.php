@@ -55,7 +55,7 @@
 				<li><a href="index.php">Home</a></li>
 				<li><a href="index.php">Bobot</a></li>
 				<li><a href="#Portfolio">Histori</a></li>
-				<li><a href="">Masuk</a></li>
+				<li><a href="login.php">Masuk</a></li>
 				<li><a href="register.php">Daftar</a></li>
 			</ul>
 			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
@@ -72,34 +72,24 @@
 			<h6>Silakan isi sesuai data diri Anda</h6>
 			<div class="row">
 				<div class="wow fadeInLeft delay-05s">
-					<!-- <div class="service-list"> -->
-						<!-- <div class="service-list-col1"></div>
-						<div class="service-list-col2"> -->
 							<form method="post" action="daftarProses.php">
 								<div class="form-group col-md-12">
 								    <label for="inputNama">Nama</label>
-								    <input type="text" class="form-control" name="name" id="inputNama" placeholder="Nama Lengkap">
+								    <input type="text" class="form-control" name="nama" id="inputNama" placeholder="Nama Lengkap">
 								</div>	
 								<div class="form-group col-md-12">
 								    <label for="inputEmail">Email</label>
 								    <input type="text" class="form-control" name="email" id="inputEmail" placeholder="ex : namaemail@gmail.com">
 								</div>
-								<div class="form-group col-md-12">
-								    <label for="inputPw">Password</label>
-								    <input type="Password" class="form-control" name="pw" id="inputPw" placeholder="">
-								</div>		
+								<div class="form-group col-md-6">
+							    	<label for="inputPw">Password</label>
+							    	<input type="Password" class="form-control" name="pw" id="inputPw" placeholder="">
+								</div>	
 								<div class="form-group col-md-12">
 								    <label for="inputSekolah">Sekolah</label>
-								    <input type="text" class="form-control" id="inputSekolah" placeholder="Nama Sekolah">
+								    <input type="text" class="form-control" name="sekolah" id="inputSekolah" placeholder="Nama Sekolah">
 								</div>						
-								<!-- <div class="form-group col-md-12">
-								    <div class="form-check">
-								      <input class="form-check-input" type="checkbox" id="gridCheck">
-								      <label class="form-check-label" for="gridCheck">
-								        Check me out
-								      </label>
-								    </div>
-								</div> -->
+								
 								<div class="form-group col-md-12">
 									<button type="submit" class="btn btn-primary">Daftar</button>
 								</div>								
@@ -107,77 +97,7 @@
 							</div>
 						</div>
 					</div>
-				<!-- </div> -->
-			
 		</section>
-
-
-
-
-			<!-- <h2>Pendaftaran Akun</h2>
-			<h6>Silakan isi sesuai data diri Anda</h6>
-			<div class="row">
-				<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
-					<div class="service-list">
-						<div class="service-list-col1"></div>
-						<div class="service-list-col2">
-
-							<div class="form-group">
-								<label for="inputBiaya">Bobot Biaya</label>								
-								<select class="form-control" id="biaya">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-
-							<div class="form-group">
-								<label for="inputFasilitas">Bobot Fasilitas</label>								
-								<select class="form-control" id="fasilitas">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-
-							<div class="form-group">
-								<label for="inputPertemuan">Bobot Jumlah Pertemuan</label>								
-								<select class="form-control" id="pertemuan">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-
-							<div class="form-group">
-								<label for="inputKapasitas">Bobot Kapasitas</label>								
-								<select class="form-control" id="kapasitas">
-									<option>1</option>
-									<option>2</option>
-									<option>3</option>
-									<option>4</option>
-									<option>5</option>
-								</select>
-							</div>
-
-							<br>
-							
-							<div class="form-group">
-								<button type="submit" class="input-btn">Hitung</button>
-							</div>
-
-						</div>
-					</div>
-			</div>
-		</div>
-	</section>
-	<!--main-section-end--> -->
 
 
 	<section class="main-section alabaster" id="Portfolio">
