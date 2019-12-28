@@ -52,7 +52,7 @@
 		<div class="container">
 			<ul class="main-nav">
 				<li class="small-logo"><a href="#header"><img src="img/smallicon.png" alt=""></a></li>
-				<li><a href="#header">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="index.php">Bobot</a></li>
 				<li><a href="#Portfolio">Histori</a></li>
 				<li><a href="">Masuk</a></li>
@@ -75,51 +75,34 @@
 					<!-- <div class="service-list"> -->
 						<!-- <div class="service-list-col1"></div>
 						<div class="service-list-col2"> -->
-							<form>
-								<div class="form-row">
-								    <div class="form-group col-md-6">
-								      <label for="inputEmail4">Email</label>
-								      <input type="email" class="form-control" id="inputEmail4">
-								    </div>
-								    <div class="form-group col-md-6">
-								      <label for="inputPassword4">Password</label>
-								      <input type="password" class="form-control" id="inputPassword4">
-								    </div>
+							<form method="post" action="daftarProses.php">
+								<div class="form-group col-md-12">
+								    <label for="inputNama">Nama</label>
+								    <input type="text" class="form-control" name="name" id="inputNama" placeholder="Nama Lengkap">
+								</div>	
+								<div class="form-group col-md-12">
+								    <label for="inputEmail">Email</label>
+								    <input type="text" class="form-control" name="email" id="inputEmail" placeholder="ex : namaemail@gmail.com">
 								</div>
-								<div class="form-group">
-								    <label for="inputAddress">Address</label>
-								    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-								</div>
-								<div class="form-group">
-								    <label for="inputAddress2">Address 2</label>
-								    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-								</div>
-								<div class="form-row">
-								    <div class="form-group col-md-6">
-								      <label for="inputCity">City</label>
-								      <input type="text" class="form-control" id="inputCity">
-								    </div>
-								    <div class="form-group col-md-4">
-								      <label for="inputState">State</label>
-								      <select id="inputState" class="form-control">
-								        <option selected>Choose...</option>
-								        <option>...</option>
-								      </select>
-								    </div>
-								    <div class="form-group col-md-2">
-								      <label for="inputZip">Zip</label>
-								      <input type="text" class="form-control" id="inputZip">
-								    </div>
-								</div>
-								<div class="form-group">
+								<div class="form-group col-md-12">
+								    <label for="inputPw">Password</label>
+								    <input type="Password" class="form-control" name="pw" id="inputPw" placeholder="">
+								</div>		
+								<div class="form-group col-md-12">
+								    <label for="inputSekolah">Sekolah</label>
+								    <input type="text" class="form-control" id="inputSekolah" placeholder="Nama Sekolah">
+								</div>						
+								<!-- <div class="form-group col-md-12">
 								    <div class="form-check">
 								      <input class="form-check-input" type="checkbox" id="gridCheck">
 								      <label class="form-check-label" for="gridCheck">
 								        Check me out
 								      </label>
 								    </div>
-								</div>
-								<button type="submit" class="btn btn-primary">Sign in</button>
+								</div> -->
+								<div class="form-group col-md-12">
+									<button type="submit" class="btn btn-primary">Daftar</button>
+								</div>								
 								</form>
 							</div>
 						</div>

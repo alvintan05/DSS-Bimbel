@@ -686,7 +686,8 @@ border: 2px solid #fff;
 }
 
 .form{
-	margin:0 66px 0 30px;
+	margin:0 0px 0 0px;
+	padding-left: 0px;
 }
 .input-text{
 	padding:15px 16px;

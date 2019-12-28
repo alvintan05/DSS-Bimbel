@@ -51,10 +51,10 @@
 		<div class="container">
 			<ul class="main-nav">
 				<li class="small-logo"><a href="#header"><img src="img/smallicon.png" alt=""></a></li>
-				<li><a href="#header">Home</a></li>
+				<li><a href="index.php">Home</a></li>
 				<li><a href="index.php">Bobot</a></li>
 				<li><a href="#Portfolio">Histori</a></li>
-				<li><a href="">Masuk</a></li>
+				<li><a href="#Portfolio">Masuk</a></li>
 				<li><a href="register.php">Daftar</a></li>
 			</ul>
 			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
@@ -85,7 +85,7 @@
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
-										<option value="4">4</option>									
+										<option value="4">4</option>
 									</select>
 								</div>
 
@@ -95,7 +95,7 @@
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
-										<option value="4">4</option>										
+										<option value="4">4</option>
 									</select>
 								</div>
 
@@ -105,7 +105,7 @@
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
-										<option value="4">4</option>										
+										<option value="4">4</option>
 									</select>
 								</div>
 
@@ -115,7 +115,7 @@
 										<option value="1">1</option>
 										<option value="2">2</option>
 										<option value="3">3</option>
-										<option value="4">4</option>										
+										<option value="4">4</option>
 									</select>
 								</div>
 
@@ -164,15 +164,15 @@
 				<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
 				</figure>
 				<div class="col-lg-7 col-sm-8 featured-work">
-					<h2>Lorem</h2>
-					<P class="padding-b"> Lorem</P>
+					<h2>NGANTUK</h2>
+					<P class="padding-b"> NGANTUK</P>
 					<div class="featured-box">
 						<div class="featured-box-col1 wow fadeInRight delay-02s">
 							<i class="fa fa-magic"></i>
 						</div>
 						<div class="featured-box-col2 wow fadeInRight delay-02s">
-							<h3>Lorem</h3>
-							<p>Lorem </p>
+							<h3>BODO</h3>
+							<p>GUANGANTUK </p>
 						</div>
 					</div>
 					<div class="featured-box">
@@ -180,8 +180,8 @@
 							<i class="fa fa-gift"></i>
 						</div>
 						<div class="featured-box-col2 wow fadeInRight delay-04s">
-							<h3>Lorem</h3>
-							<p>Lorem </p>
+							<h3>NGANTUK</h3>
+							<p>NGANTUK </p>
 						</div>
 					</div>
 					<div class="featured-box">
@@ -189,8 +189,8 @@
 							<i class="fa fa-dashboard"></i>
 						</div>
 						<div class="featured-box-col2 wow fadeInRight delay-06s">
-							<h3>Lorem</h3>
-							<p>Lorem </p>
+							<h3>NGANTUKBODO</h3>
+							<p>TIDUR </p>
 						</div>
 					</div>
 					<a class="Learn-More" href="#">Learn More</a>
