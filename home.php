@@ -1,10 +1,14 @@
+<?php 
+include "koneksi.php"; 
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Daftar -DSS BIMBLE 12 SMA-</title>
+	<title>Homepage -DSS BIMBLE 12 SMA-</title>
 
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
@@ -31,13 +35,30 @@
 
 </head>
 <body>
+	<header class="header" id="header">
+		<!--header-start-->
+		<div class="container">
+			<figure class="logo animated fadeInDown delay-07s">
+				<a href="#"><img src="img/logo.png" alt=""></a>
+			</figure>
+			<h1 class="animated fadeInDown delay-07s">Selamat Datang di Sistem Pendukung Keputusan Bimbingan Belajar Kelas 12 SMA</h1>
+			<ul class="we-create animated fadeInUp delay-1s">
+				<li>Tentukan masa depanmu dari sekarang</li>
+			</ul>
+			<a class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
+		</div>
+	</header>
+	<!--header-end-->
+
+
 	<nav class="main-nav-outer" id="test">
 		<!--main-nav-start-->
 		<div class="container">
 			<ul class="main-nav">
-				<li class="small-logo"><a href="index.php"><img src="img/smallicon.png" alt=""></a></li>
-				<li><a href="login.php">Masuk</a></li>
-				<li><a href="register.php">Daftar</a></li>
+				<li class="small-logo"><a href="#header"><img src="img/smallicon.png" alt=""></a></li>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="#Portfolio">Histori</a></li>
+				<li><a href="logout.php">Logout</a></li>
 			</ul>
 			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
 		</div>
@@ -48,35 +69,93 @@
 	<section class="main-section" id="service">
 		<!--main-section-start-->
 		<div class="container">
-			<h2>Pendaftaran Akun</h2>
-			<h6>Silakan isi sesuai data diri Anda</h6>
-			<div class="row">
-				<div class="wow fadeInLeft delay-05s">
-					<form method="post" action="daftarProses.php">
-						<div class="form-group col-md-12">
-						    <label for="inputNama">Nama</label>
-						    <input type="text" class="form-control" name="nama" id="inputNama" placeholder="Nama Lengkap">
-						</div>	
-						<div class="form-group col-md-12">
-						    <label for="inputEmail">Email</label>
-						    <input type="text" class="form-control" name="email" id="inputEmail" placeholder="ex : namaemail@gmail.com">
+			<h2>Bobot</h2>
+			<h6>Silakan masukan bobot dari setiap kriteria</h6>			
+			<form method="POST" action="CalculationPage.php">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-3 wow fadeInLeft delay-05s">
+						<div class="service-list">
+							<div class="service-list-col1">								
+							</div>
+							<div class="service-list-col2">
+
+								<div class="form-group">
+									<label for="inputBiaya">Bobot Biaya</label>								
+									<select class="form-control" id="biaya" name="biaya">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="inputFasilitas">Bobot Fasilitas</label>								
+									<select class="form-control" id="fasilitas" name="fasilitas">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="inputPertemuan">Bobot Jumlah Pertemuan</label>						
+									<select class="form-control" id="pertemuan" name="pertemuan">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+
+								<div class="form-group">
+									<label for="inputKapasitas">Bobot Kapasitas</label>								
+									<select class="form-control" id="kapasitas" name="kapasitas">
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
+
+								<br>
+								
+								<div class="form-group">
+									<button type="submit" class="input-btn" name="submit">Hitung</button>
+								</div>
+
+							</div>
 						</div>
-						<div class="form-group col-md-12">
-					    	<label for="inputPw">Password</label>
-					    	<input type="Password" class="form-control" name="pw" id="inputPw" placeholder="">
-						</div>	
-						<div class="form-group col-md-12">
-						    <label for="inputSekolah">Sekolah</label>
-						    <input type="text" class="form-control" name="sekolah" id="inputSekolah" placeholder="Nama Sekolah">
-						</div>						
-						<div class="form-group col-md-12">
-							<button type="submit" class="btn btn-primary">Daftar</button>
-						</div>								
-					</form>
+					</div>
+					<div class="col-md-5 wow fadeInLeft delay-05s"> 
+
+						<table>
+							<tr align="left">
+								<td>Keterangan Bobot</td>
+							</tr>
+							<tr align="left">
+								<td>1 : Sangat Tidak Penting</td>
+							</tr>							
+							<tr align="left">
+								<td>2 : Tidak Penting</td>
+							</tr>								
+							<tr align="left">
+								<td>3 : Penting</td>
+							</tr>							
+							<tr align="left">
+								<td>4 : Sangat Penting</td>
+							</tr>									
+						</table>											
+
+					</div>
 				</div>
-			</div>
+				<div class="col-md-2"></div>
+			</form>
 		</div>
 	</section>
+	<!--main-section-end-->
 
 
 	<section class="main-section alabaster" id="Portfolio">
@@ -225,6 +304,6 @@
 		});
 	</script>
 
-</body>
 
+</body>
 </html>

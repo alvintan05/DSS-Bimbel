@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Homepage</title>
+	<title>Sistem Pendukung Keputusan Bimbel 12 SMA</title>
+
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
 
@@ -29,7 +30,6 @@
 	<script src="contactform/contactform.js"></script>
 
 </head>
-
 <body>
 	<header class="header" id="header">
 		<!--header-start-->
@@ -41,164 +41,12 @@
 			<ul class="we-create animated fadeInUp delay-1s">
 				<li>Tentukan masa depanmu dari sekarang</li>
 			</ul>
-			<a class="link animated fadeInUp delay-1s servicelink" href="#service">Get Started</a>
+			<a class="link animated fadeInUp delay-1s servicelink" href="login.php">Get Started</a>
 		</div>
 	</header>
 	<!--header-end-->
 
-	<nav class="main-nav-outer" id="test">
-		<!--main-nav-start-->
-		<div class="container">
-			<ul class="main-nav">
-				<li class="small-logo"><a href="#header"><img src="img/smallicon.png" alt=""></a></li>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="index.php">Bobot</a></li>
-				<li><a href="#Portfolio">Histori</a></li>
-				<li><a href="login.php">Masuk</a></li>
-				<li><a href="register.php">Daftar</a></li>
-			</ul>
-			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
-		</div>
-	</nav>
-	<!--main-nav-end-->
 
-
-
-	<section class="main-section" id="service">
-		<!--main-section-start-->
-		<div class="container">
-			<h2>Bobot</h2>
-			<h6>Silakan masukan bobot dari setiap kriteria</h6>			
-			<form method="POST" action="CalculationPage.php">
-
-				<div class="row">
-					<div class="col-md-2"></div>
-					<div class="col-md-3 wow fadeInLeft delay-05s">
-						<div class="service-list">
-							<div class="service-list-col1">								
-							</div>
-							<div class="service-list-col2">
-
-								<div class="form-group">
-									<label for="inputBiaya">Bobot Biaya</label>								
-									<select class="form-control" id="biaya" name="biaya">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label for="inputFasilitas">Bobot Fasilitas</label>								
-									<select class="form-control" id="fasilitas" name="fasilitas">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label for="inputPertemuan">Bobot Jumlah Pertemuan</label>						
-									<select class="form-control" id="pertemuan" name="pertemuan">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
-								</div>
-
-								<div class="form-group">
-									<label for="inputKapasitas">Bobot Kapasitas</label>								
-									<select class="form-control" id="kapasitas" name="kapasitas">
-										<option value="1">1</option>
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>
-									</select>
-								</div>
-
-								<br>
-								
-								<div class="form-group">
-									<button type="submit" class="input-btn" name="submit">Hitung</button>
-								</div>
-
-							</div>
-						</div>
-					</div>
-					<div class="col-md-5 wow fadeInLeft delay-05s"> 
-
-						<table>
-							<tr align="left">
-								<td>Keterangan Bobot</td>
-							</tr>
-							<tr align="left">
-								<td>1 : Sangat Tidak Penting</td>
-							</tr>							
-							<tr align="left">
-								<td>2 : Tidak Penting</td>
-							</tr>								
-							<tr align="left">
-								<td>3 : Penting</td>
-							</tr>							
-							<tr align="left">
-								<td>4 : Sangat Penting</td>
-							</tr>									
-						</table>											
-
-					</div>
-				</div>
-				<div class="col-md-2"></div>
-			</form>
-		</div>
-	</section>
-	<!--main-section-end-->
-
-
-	<section class="main-section alabaster" id="Portfolio">
-		<!--main-section alabaster-start-->
-		<div class="container">
-			<div class="row">
-				<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-				</figure>
-				<div class="col-lg-7 col-sm-8 featured-work">
-					<h2>NGANTUK</h2>
-					<P class="padding-b"> NGANTUK</P>
-					<div class="featured-box">
-						<div class="featured-box-col1 wow fadeInRight delay-02s">
-							<i class="fa fa-magic"></i>
-						</div>
-						<div class="featured-box-col2 wow fadeInRight delay-02s">
-							<h3>BODO</h3>
-							<p>GUANGANTUK </p>
-						</div>
-					</div>
-					<div class="featured-box">
-						<div class="featured-box-col1 wow fadeInRight delay-04s">
-							<i class="fa fa-gift"></i>
-						</div>
-						<div class="featured-box-col2 wow fadeInRight delay-04s">
-							<h3>NGANTUK</h3>
-							<p>NGANTUK </p>
-						</div>
-					</div>
-					<div class="featured-box">
-						<div class="featured-box-col1 wow fadeInRight delay-06s">
-							<i class="fa fa-dashboard"></i>
-						</div>
-						<div class="featured-box-col2 wow fadeInRight delay-06s">
-							<h3>NGANTUKBODO</h3>
-							<p>TIDUR </p>
-						</div>
-					</div>
-					<a class="Learn-More" href="#">Learn More</a>
-				</div>
-			</div>
-		</div>													
-		</section>
-	</div>
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-logo"><a href="#"><img src="img" alt=""></a></div>
@@ -224,6 +72,7 @@
 
 		});
 	</script>
+
 
 	<script>
 		wow = new WOW({
@@ -256,6 +105,7 @@
 			});
 		})
 	</script>
+
 
 	<script type="text/javascript">
 		$(window).load(function() {
@@ -302,6 +152,6 @@
 		});
 	</script>
 
-</body>
 
+</body>
 </html>

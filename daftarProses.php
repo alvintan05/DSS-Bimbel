@@ -18,10 +18,12 @@ $query = mysqli_query($koneksi, $sql);
 
 <!DOCTYPE html>
 <html>
+<head>
 <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Daftar</title>
+	<title>Berhasil Daftar</title>
+
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
 
@@ -44,24 +46,21 @@ $query = mysqli_query($koneksi, $sql);
 	<script type="text/javascript" src="js/classie.js"></script>
 	<script type="text/javascript" src="js/magnific-popup.js"></script>
 	<script src="contactform/contactform.js"></script>
-<head>
-	<title>Daftar</title>
 </head>
 <body>
 	<nav class="main-nav-outer" id="test">
 		<!--main-nav-start-->
 		<div class="container">
 			<ul class="main-nav">
-				<li class="small-logo"><a href="#header"><img src="img/smallicon.png" alt=""></a></li>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="index.php">Bobot</a></li>
-				<li><a href="#Portfolio">Histori</a></li>
+				<li class="small-logo"><a href="index.php"><img src="img/smallicon.png" alt=""></a></li>
 				<li><a href="">Masuk</a></li>
 				<li><a href="register.php">Daftar</a></li>
 			</ul>
 			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
 		</div>
 	</nav>
+
+
 	<div class="container">
 		<div class="card text-center w-75">
 			<div class="card-body">
@@ -71,11 +70,11 @@ $query = mysqli_query($koneksi, $sql);
 			    <p></p>
 			    <h4 class="card-text">Silahkan melakukan Login !</h4>
 			    <p> </p>
-
 			    <a href="login.php" class="btn btn-primary">Login</a>
 			</div>
 		</div>
-
 	</div>
+
+	
 </body>
 </html>

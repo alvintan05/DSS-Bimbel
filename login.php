@@ -1,11 +1,19 @@
-<!doctype html>
-<html>
+<?php
+include "koneksi.php";
+session_start();
+// if (isset($_SESSION['email'])){
+// 	header ("location:index.php");
+// }
+?>
 
+<!DOCTYPE html>
+<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Daftar</title>
+	<title>Login -DSS BIMBEL 12 SMA-</title>
+	
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
 
@@ -30,16 +38,12 @@
 	<script src="contactform/contactform.js"></script>
 
 </head>
-
 <body>
 	<nav class="main-nav-outer" id="test">
 		<!--main-nav-start-->
 		<div class="container">
 			<ul class="main-nav">
-				<li class="small-logo"><a href="#header"><img src="img/smallicon.png" alt=""></a></li>
-				<li><a href="index.php">Home</a></li>
-				<li><a href="index.php">Bobot</a></li>
-				<li><a href="#Portfolio">Histori</a></li>
+				<li class="small-logo"><a href="index.php"><img src="img/smallicon.png" alt=""></a></li>
 				<li><a href="">Masuk</a></li>
 				<li><a href="register.php">Daftar</a></li>
 			</ul>
@@ -49,7 +53,6 @@
 	<!--main-nav-end-->
 
 
-
 	<section class="main-section" id="service">
 		<!--main-section-start-->
 		<div class="container">
@@ -57,45 +60,53 @@
 			<h6></h6>
 			<div class="row">
 				<div class="wow fadeInLeft delay-05s">
-							<form method="post" action="loginProses.php">
-								<div class="form-row">
-									<div class="form-group col-md-4"></div>
-									<div class="form-group col-md-4">
-									    <label for="inputEmail">Email</label>
-									    <input type="text" class="form-control" name="email" id="inputEmail" placeholder="ex : namaemail@gmail.com">
-									</div>
-									<div class="form-group col-md-4"></div>
-								</div>
-								<div class="form-group col-md-12"></div>
-								<div class="form-row">
-									<div class="form-group col-md-4"></div>
-									<div class="form-group col-md-4">
-								    	<label for="inputPw">Password</label>
-								    	<input type="Password" class="form-control" name="pw" id="inputPw" placeholder="">
-									</div>	
-									<div class="form-group col-md-4"></div>
-								</div>
-								<div class="form-group col-md-12"></div>
-								<div class="form-row">
-									<div class="form-group col-md-4"></div>
-									<div class="form-group col-md-4">
-										<button type="submit" class="btn btn-primary">Masuk</button>
-									</div>	
-									<div class="form-group col-md-4"></div>
-								</div>					
-								</form>
+					<form method="post" action="loginProses.php">
+						<div class="form-row">
+							<div class="form-group col-md-4"></div>
+							<div class="form-group col-md-4">
+							    <label for="inputEmail">Email</label>
+							    <input type="text" class="form-control" name="email" id="inputEmail" placeholder="ex : namaemail@gmail.com">
 							</div>
+							<div class="form-group col-md-4"></div>
 						</div>
-					</div>
-		</section>
+						<div class="form-group col-sm-12"></div>
+						<div class="form-row">
+							<div class="form-group col-md-4"></div>
+							<div class="form-group col-md-4">
+						    	<label for="inputPw">Password</label>
+						    	<input type="Password" class="form-control" name="pw" id="inputPw" placeholder="">
+							</div>	
+							<div class="form-group col-md-4"></div>
+						</div>
+						<div class="form-group col-sm-12"></div>
+						<div class="form-row">
+							<div class="form-group col-md-4"></div>
+							<div class="form-group col-md-4">
+								<button type="submit" class="btn btn-primary">Masuk</button>
+							</div>	
+							<div class="form-group col-md-4"></div>
+						</div>		
+						<div class="form-group col-sm-12"></div>
+						<p></p>
+						<div class="form-row">
+							<div class="form-group col-md-4"></div>
+							<div class="form-group col-md-4">
+								<h5>Belum punya akun ? <a class="nav-link active" href="register.php">Daftar disini</a></h5>
+							</div>	
+							<div class="form-group col-md-4"></div>
+						</div>			
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<section class="main-section alabaster" id="Portfolio">
 		<!--main-section alabaster-start-->
 		<div class="container">
 			<div class="row">
-				<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
-				</figure>
+				<figure class="col-lg-5 col-sm-4 wow fadeInLeft"></figure>
 				<div class="col-lg-7 col-sm-8 featured-work">
 					<h2>NGANTUK</h2>
 					<P class="padding-b"> NGANTUK</P>
@@ -130,8 +141,9 @@
 				</div>
 			</div>
 		</div>													
-		</section>
-	</div>
+	</section>
+
+
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-logo"><a href="#"><img src="img" alt=""></a></div>
@@ -157,6 +169,7 @@
 
 		});
 	</script>
+
 
 	<script>
 		wow = new WOW({
@@ -189,6 +202,7 @@
 			});
 		})
 	</script>
+
 
 	<script type="text/javascript">
 		$(window).load(function() {
@@ -235,6 +249,6 @@
 		});
 	</script>
 
-</body>
 
+</body>
 </html>
