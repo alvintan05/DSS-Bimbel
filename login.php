@@ -52,7 +52,6 @@ session_start();
 	</nav>
 	<!--main-nav-end-->
 
-
 	<section class="main-section" id="service">
 		<!--main-section-start-->
 		<div class="container">
@@ -100,49 +99,6 @@ session_start();
 			</div>
 		</div>
 	</section>
-
-
-	<section class="main-section alabaster" id="Portfolio">
-		<!--main-section alabaster-start-->
-		<div class="container">
-			<div class="row">
-				<figure class="col-lg-5 col-sm-4 wow fadeInLeft"></figure>
-				<div class="col-lg-7 col-sm-8 featured-work">
-					<h2>NGANTUK</h2>
-					<P class="padding-b"> NGANTUK</P>
-					<div class="featured-box">
-						<div class="featured-box-col1 wow fadeInRight delay-02s">
-							<i class="fa fa-magic"></i>
-						</div>
-						<div class="featured-box-col2 wow fadeInRight delay-02s">
-							<h3>BODO</h3>
-							<p>GUANGANTUK </p>
-						</div>
-					</div>
-					<div class="featured-box">
-						<div class="featured-box-col1 wow fadeInRight delay-04s">
-							<i class="fa fa-gift"></i>
-						</div>
-						<div class="featured-box-col2 wow fadeInRight delay-04s">
-							<h3>NGANTUK</h3>
-							<p>NGANTUK </p>
-						</div>
-					</div>
-					<div class="featured-box">
-						<div class="featured-box-col1 wow fadeInRight delay-06s">
-							<i class="fa fa-dashboard"></i>
-						</div>
-						<div class="featured-box-col2 wow fadeInRight delay-06s">
-							<h3>NGANTUKBODO</h3>
-							<p>TIDUR </p>
-						</div>
-					</div>
-					<a class="Learn-More" href="#">Learn More</a>
-				</div>
-			</div>
-		</div>													
-	</section>
-
 
 	<footer class="footer">
 		<div class="container">

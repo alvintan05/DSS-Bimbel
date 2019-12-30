@@ -15,6 +15,8 @@ include "koneksi.php";
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 	<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
@@ -57,15 +59,17 @@ include "koneksi.php";
 		<div class="row">
 			<div class="wow fadeInLeft delay-05s">
 				<div>
-					<h3>Tabel Bobot</h3>
+					<h3 class="font-weight-bold">Tabel Bobot</h3>
 
-					<table border="1px">
-						<tr>
-							<th>Biaya</th>
-							<th>Fasilitas</th>
-							<th>Pertemuan</th>			
-							<th>Kapasitas</th>
-						</tr>
+					<table class="table table-sm table-hover" border="1px">
+						<thead class="thead-dark">
+							<tr>
+								<th>Biaya</th>
+								<th>Fasilitas</th>
+								<th>Pertemuan</th>			
+								<th>Kapasitas</th>
+							</tr>
+						</thead>
 					
 						<?php  
 
@@ -94,14 +98,15 @@ include "koneksi.php";
 
 				<div>
 					<br>
-					<h3>Tabel Alternatif</h3>
+					<h3 class="font-weight-bold">Tabel Alternatif</h3>
 
-					<table border="1px">
-						
-						<tr>
-							<th>Id Alternatif</th>
-							<th>Nama Alternatif</th>
-						</tr>
+					<table class="table table-sm table-hover" border="1px">
+						<thead class="thead-dark">										
+							<tr>
+								<th>Id Alternatif</th>
+								<th>Nama Alternatif</th>
+							</tr>
+						</thead>
 
 						<?php  
 
@@ -131,15 +136,18 @@ include "koneksi.php";
 
 				<div>
 					<br>
-					<h3>Matriks Keputusan</h3>
+					<h3 class="font-weight-bold">Matriks Keputusan</h3>
 
-					<table border="2">	
+					<table class="table table-sm table-hover" border="1">	
+						<thead class="thead-dark">
+							
+							<tr>
+								<th>Id</th>
+								<th>Nama</th>
+								<th colspan="4">Matriks</th>
+							</tr>
 
-						<tr>
-							<th>Id</th>
-							<th>Nama</th>
-							<th colspan="4">Matriks</th>
-						</tr>
+						</thead>
 
 						<?php 
 
@@ -176,7 +184,7 @@ include "koneksi.php";
 
 				<div>
 					<br>
-					<h3>Xn</h3>
+					<h3 class="font-weight-bold">Xn</h3>
 					<?php
 						//-- inisialisasi array pembagi
 						$kuadrat = array();
@@ -206,13 +214,15 @@ include "koneksi.php";
 							$Xn[$row] = sqrt($nilai);
 						}
 
-						echo "<table border=1>";
+						echo "<table class=\"table table-sm table-hover\" border=1>";
+						echo "<thead class=\"thead-dark\">";
 						echo "<tr>";
 						echo "<th>X1</th>";
 						echo "<th>X2</th>";
 						echo "<th>X3</th>";
 						echo "<th>X4</th>";
 						echo "</tr>";
+						echo "</thead>";
 						echo "<tr>";				
 						foreach ($Xn as $id_kriteria => $nilai) {				
 							echo "<td>{$nilai}</td>";								
@@ -222,7 +232,7 @@ include "koneksi.php";
 					?>
 
 					<br>
-					<h3>Matriks Normalisasi</h3>
+					<h3 class="font-weight-bold">Matriks Normalisasi</h3>
 
 					<?php  
 
@@ -236,7 +246,7 @@ include "koneksi.php";
 
 						}	
 
-						echo "<table border=2>";
+						echo "<table class=\"table table-sm table-hover\" border=2>";
 						foreach ($mtx_norm as $id_bimbel => $v_kriteria) {
 							echo "<tr>";
 							foreach ($v_kriteria as $id_kriteria => $nilai) {
@@ -252,8 +262,8 @@ include "koneksi.php";
 
 				<div>
 					<br>
-					<h3>Matriks Terbobot Y</h3>
-					<table border="2">			
+					<h3 class="font-weight-bold">Matriks Terbobot Y</h3>
+					<table class="table table-sm table-hover" border="2">			
 
 						<?php  
 
@@ -283,7 +293,7 @@ include "koneksi.php";
 
 				<div>
 					<br>
-					<h3>Solusi Ideal Positif (A+)</h3>		
+					<h3 class="font-weight-bold">Solusi Ideal Positif (A+)</h3>		
 					<?php  
 
 						$A_max=$A_min=array();
@@ -306,13 +316,15 @@ include "koneksi.php";
 						list($A_max[1], $A_min[1]) = array($A_min[1], $A_max[1]);
 						list($A_max[4], $A_min[4]) = array($A_min[4], $A_max[4]);
 					?>		
-					<table border="1">
-						<tr>
-							<th>Biaya</th>
-							<th>Fasilitas</th>
-							<th>Pertemuan</th>
-							<th>Kapasitas</th>
-						</tr>			
+					<table class="table table-sm table-hover" border="1">
+						<thead class="thead-dark">
+							<tr>
+								<th>Biaya</th>
+								<th>Fasilitas</th>
+								<th>Pertemuan</th>
+								<th>Kapasitas</th>
+							</tr>			
+						</thead>
 						
 						<?php 
 							echo "<tr>";
@@ -325,15 +337,17 @@ include "koneksi.php";
 					</table>
 
 					<br>
-					<h3>Solusi Ideal Negatif A-</h3>
+					<h3 class="font-weight-bold">Solusi Ideal Negatif A-</h3>
 
-					<table border="1">
-						<tr>
-							<th>Biaya</th>
-							<th>Fasilitas</th>
-							<th>Pertemuan</th>
-							<th>Kapasitas</th>
-						</tr>			
+					<table class="table table-sm table-hover" border="1">
+						<thead class="thead-dark">
+							<tr>
+								<th>Biaya</th>
+								<th>Fasilitas</th>
+								<th>Pertemuan</th>
+								<th>Kapasitas</th>
+							</tr>			
+						</thead>
 						
 						<?php 
 							echo "<tr>";
@@ -349,9 +363,15 @@ include "koneksi.php";
 
 				<div>
 					<br>
-					<h3>Jarak Solusi Ideal Positif D+</h3>		
+					<h3 class="font-weight-bold">Jarak Solusi Ideal Positif D+</h3>		
 
-					<table border="1">					
+					<table class="table table-sm table-hover" border="2">	
+						<thead class="thead-dark">
+							<tr>
+								<th>#</th>
+								<th>D+</th>
+							</tr>
+						</thead>				
 
 					<?php  
 
@@ -384,9 +404,15 @@ include "koneksi.php";
 					</table>
 
 					<br>
-					<h3>Jarak Solusi Ideal Negatif D-</h3>
+					<h3 class="font-weight-bold">Jarak Solusi Ideal Negatif D-</h3>
 
-					<table border="1">
+					<table class="table table-sm table-hover" border="2">
+						<thead class="thead-dark">
+							<tr>
+								<th>$</th>
+								<th>D-</th>
+							</tr>
+						</thead>
 						<?php 
 
 							foreach ($D_min as $id_bimbel => $value) {
@@ -403,15 +429,17 @@ include "koneksi.php";
 
 				<div>
 					<br>
-					<h3>Nilai Preferensi</h3>
+					<h3 class="font-weight-bold">Nilai Preferensi</h3>
 
-					<table border="2">
-						<tr>
-							<th>Id</th>
-							<th>Nama Bimbel</th>
-							<th>Nilai</th>
-							<th>Rank</th>
-						</tr>
+					<table class="table table-sm table-hover" border="2">
+						<thead class="thead-dark">
+							<tr>
+								<th>Id</th>
+								<th>Nama Bimbel</th>
+								<th>Nilai</th>
+								<th>Rank</th>
+							</tr>
+						</thead>
 
 						<?php 
 
@@ -440,14 +468,16 @@ include "koneksi.php";
 					</table>
 
 				</div>
+				
+				<form action="">
+					<input type="button" class="btn btn-success" name="save" value="SIMPAN">
+					<input type="button" class="btn btn-danger" name="delete" value="HAPUS">
+				</form>
 
 			</div>
 		</div>
 	</div>
 </section>
 
-
-
-	
 </body>
 </html>
