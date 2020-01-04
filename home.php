@@ -1,6 +1,7 @@
-<?php 
-include "koneksi.php"; 
-session_start();
+<?php  
+
+	session_start();
+
 ?>
 
 <!DOCTYPE html>
@@ -9,7 +10,7 @@ session_start();
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Homepage -DSS BIMBLE 12 SMA-</title>
+	<title>Homepage DSS BIMBLE 12 SMA-</title>
 
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
@@ -162,7 +163,7 @@ session_start();
 	<section class="main-section alabaster" id="Portfolio">
 		<!--main-section alabaster-start-->
 		<div class="container">
-			<h2>Table History</h2>
+			<h2>Table Histori</h2>
 			<div class="row">
 				<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
 				</figure>
@@ -176,23 +177,33 @@ session_start();
 							    </tr>
 							  </thead>
 							  <tbody>
-							    <tr>
-							      <th scope="row">1</th>
-							      <td></td>
-							      <td></td>
-							    </tr>
-							    <tr>
-							      <th scope="row">2</th>
-							      <td></td>
-							      <td></td>
-							      
-							    </tr>
-							    <tr>
-							      <th scope="row">3</th>
-							      <td></td>
-							      <td></td>
-							      
-							    </tr>
+							    
+							    <?php  
+
+							    	include 'koneksi.php';							    
+
+							    	$id_user = $_SESSION['user_id'];
+
+							    	$query = "SELECT * FROM tb_history WHERE id_user='$id_user'";
+							    	$result = mysqli_query($koneksi, $query);
+
+							    	$index = 1;
+
+							    	while ($d = mysqli_fetch_array($result)) {
+
+										?>
+										<tr>
+											<td><?php echo $index ?></td>					
+											<td><?php echo $d['tgl_jam'] ?></td>									
+											<td>
+												<a href="history_detail.php?id=<?php echo $d['id_history']; ?>" class="btn btn-success" role="button">DETAIL</a>						
+											</td>
+										</tr>
+										<?php  
+										$index++;
+									}
+									?>							   
+
 							  </tbody>
 							</table>
 						</div>

@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Daftar -DSS BIMBLE 12 SMA-</title>
+	<title>Daftar DSS BIMBLE 12 SMA-</title>
 
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
@@ -52,11 +52,15 @@
 			<h6>Silakan isi sesuai data diri Anda</h6>
 			<div class="row">
 				<div class="wow fadeInLeft delay-05s">
-					<form method="post" action="daftarProses.php">
+					<form method="POST" action="daftarProses.php">
 						<div class="form-group col-md-12">
 						    <label for="inputNama">Nama</label>
 						    <input type="text" class="form-control" name="nama" id="inputNama" placeholder="Nama Lengkap">
 						</div>	
+						<div class="form-group col-md-12">
+						    <label for="inputSekolah">Sekolah</label>
+						    <input type="text" class="form-control" name="sekolah" id="inputSekolah" placeholder="Nama Sekolah">
+						</div>										
 						<div class="form-group col-md-12">
 						    <label for="inputEmail">Email</label>
 						    <input type="text" class="form-control" name="email" id="inputEmail" placeholder="ex : namaemail@gmail.com">
@@ -64,13 +68,9 @@
 						<div class="form-group col-md-12">
 					    	<label for="inputPw">Password</label>
 					    	<input type="Password" class="form-control" name="pw" id="inputPw" placeholder="">
-						</div>	
-						<div class="form-group col-md-12">
-						    <label for="inputSekolah">Sekolah</label>
-						    <input type="text" class="form-control" name="sekolah" id="inputSekolah" placeholder="Nama Sekolah">
 						</div>						
 						<div class="form-group col-md-12">
-							<button type="submit" class="btn btn-primary">Daftar</button>
+							<button type="submit" class="btn btn-primary" name="daftar">Daftar</button>
 						</div>								
 					</form>
 				</div>

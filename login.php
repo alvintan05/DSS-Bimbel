@@ -1,18 +1,10 @@
-<?php
-include "koneksi.php";
-session_start();
-// if (isset($_SESSION['email'])){
-// 	header ("location:index.php");
-// }
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
 
-	<title>Login -DSS BIMBEL 12 SMA-</title>
+	<title>Login DSS BIMBEL 12 SMA-</title>
 	
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
@@ -81,7 +73,7 @@ session_start();
 						<div class="form-row">
 							<div class="form-group col-md-4"></div>
 							<div class="form-group col-md-4">
-								<button type="submit" class="btn btn-primary">Masuk</button>
+								<button type="submit" name="login" class="btn btn-primary">Masuk</button>
 							</div>	
 							<div class="form-group col-md-4"></div>
 						</div>		
